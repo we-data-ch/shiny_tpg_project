@@ -1,0 +1,38 @@
+---
+title: "Minutes 2024-10-02"
+authors: 
+  - name: Vestin Hategekimana
+    email: "vestin.hategekimana@unige.ch"
+    affiliations: 
+      - name: University of Geneva
+        department: Faculty of Social Sciences
+        city: Geneva
+abstract: |
+  Members present: Vestin, Quentin & Andres
+format:
+  typst: default
+---
+
+## Serverless Shiny App or classical Shiny App?
+
+We decided that creating a classical Shiny App is more feasible and gives more flexibility. We also highlighted that the loading time of a serverless ShinyApp is quite slow.
+
+## What project?
+
+[The "Transport Public Genevois" (TPG) open dataset](https://opendata.tpg.ch/explore/?sort=title) will be used to create a map of isolated bus stations. We also want to join theses data with other datasets:
+
+-   Swiss Federal Statistical Office: <https://www.bfs.admin.ch/bfs/en/home/statistics.html>
+
+-   Geneva Statisitcal Office: <https://statistique.ge.ch/>
+
+-   Transport opendata: <https://transport.opendata.ch/>
+
+-   Swiss Open data: <https://opendata.swiss/en>
+
+-   Google map
+
+## Next steps
+
+1.  Explore the datasets
+2.  Gather learning ressources for all
+3.  Find a catchy name for the project
