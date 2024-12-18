@@ -1,0 +1,31 @@
+---
+title: "Minutes 2024-12-17"
+authors: 
+  - name: Vestin Hategekimana
+    email: "vestin.hategekimana@unige.ch"
+    affiliations: 
+      - name: University of Geneva
+        department: Faculty of Social Sciences
+        city: Geneva
+abstract: |
+  Members present: Kenneth, Quentin & Vestin
+format:
+  typst: default
+---
+
+## New Plan, Big Plan
+
+We have a new direction for the ShinyApp suggested by Kenneth. The goal is to create an interactive map of the bus stops, close to one of the [TPG](https://opendata.tpg.ch/pages/accueil/). We will add more information like the bus paths. The aim will be to highlight areas where there might be too many bus stops. All the details can be found [here](https://github.com/we-data-ch/shiny_tpg_project/blob/master/Ideas/kr_01.md#pitch).
+
+## Ressources
+
+- [Columns aggregation](https://docs.google.com/spreadsheets/d/1RC6piyqDbOTF4uTvxy7VO05NM2GZjtV-t79MUZ9PWyA/edit?gid=0#gid=0)
+- [Geocomputation with R](https://r.geocompx.org/)
+- [Making maps with R](https://r.geocompx.org/adv-map)
+- [OpenStreetMap](https://www.openstreetmap.org)
+
+## Next steps
+
+1. Form teams
+2. Improve and validate the plan
+3. Begin with conceptualization
