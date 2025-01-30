@@ -1,0 +1,44 @@
+---
+title: "Test Map"
+format: html
+editor: visual
+echo: false
+---
+
+```{r}
+#| message: false
+#| warning: false 
+# Libraries ----
+pacman::p_load(
+  tidyverse, janitor, leaflet
+)
+
+# Options  ----
+
+# Data ----
+df0 <-  
+  read_csv2("raw_tpg_data/20241002_arrets.csv") %>% 
+  clean_names() %>% 
+  filter(actif == "Y") %>% 
+  separate(coordonnees, sep = ", ", into = c("lat", "lng")) %>% 
+  mutate(across(lat:lng, as.numeric)) %>% 
+  mutate(arret = str_remove(arret, " - CH"))
+
+# Measure
+lng_mean <- mean(df0$lng, na.rm = TRUE)
+lat_mean <- mean(df0$lat, na.rm = TRUE)
+
+leaflet() %>% 
+  addTiles() %>% 
+  setView(
+    lng = lng_mean, 
+    lat = lat_mean, 
+    zoom = 11
+    ) %>% 
+  addCircleMarkers(
+    data=df0, 
+    radius = 2,
+    popup = df0$arret
+    )
+```
+
